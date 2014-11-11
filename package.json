@@ -1,0 +1,31 @@
+{
+  "name": "food-words",
+  "version": "1.0.0",
+  "description": "a list of delicious food words",
+  "author": "Good Eggs <open-source@goodeggs.com>",
+  "contributors": [
+    "Max Edmands <me@maxedmands.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "food wordlist"
+  ],
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goodeggs/food-words.git"
+  },
+  "homepage": "https://github.com/goodeggs/food-words",
+  "bugs": "https://github.com/goodeggs/food-words/issues",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "coffee-script": ">=1.7.x",
+    "mocha": "~1.x.x"
+  },
+  "scripts": {
+    "compile": "coffee --bare --compile --output lib/ src/",
+    "prepublish": "npm run compile",
+    "pretest": "npm run compile",
+    "test": "mocha"
+  }
+}
